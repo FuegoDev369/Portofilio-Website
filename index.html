@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FuegoDev | Portfolio - Modern Web & Mobile Development</title>
+  <meta name="description" content="FuegoDev transforms ideas into modern technology products. Web, mobile, and blockchain development services by Aristide, based in Benin.">
+  <meta name="keywords" content="web development, mobile development, blockchain, portfolio, FuegoDev, Aristide">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap"></noscript>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header with navigation -->
+  <header class="header">
+    <div class="logo">
+      <img src="https://i.supaimg.com/8dd9c9bd-0ef8-455c-8c63-fe9f2ca39429.png" 
+           alt="FuegoDev Logo" width="60" height="60" loading="eager" id="fuegoDevLogo">
+    </div>
+    <nav class="nav" id="nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <main>
+   <!-- Home Section -->
+   <section id="home" class="section home">
+    <h1>HELLO THERE AND WELCOME TO FuegoDev</h1>
+    <p>FuegoDev transforms ideas into modern technology products, combining web, mobile, and decentralized development.</p>
+    <a href="#projects" class="btn" id="myProjects">MY PROJECTS</a>
+   </section>
+
+  <!-- About Section -->
+   <section id="about" class="section about">
+    <h2>ABOUT ME</h2>
+    <div id="pic">
+      <img src="https://i.supaimg.com/6f1806f4-4f1c-4ffc-8100-bb181096a7a0.jpg" alt="Aristide's Profile Picture" loading="lazy">
+    </div>
+    <p>
+      👋 Hi, I'm <strong><em>ARISTIDE</em></strong> — a passionate web & mobile developer based in Benin, building the future one line of code at a time.
+      <br><br>
+      I design and develop modern, responsive, and purposeful digital experiences through web, mobile, and blockchain technologies.
+      With a strong sense of innovation, a great love for learning and teamwork, I turn every project into an opportunity to grow, build, and inspire.
+      Thanks to my skills, I give life to your dreams.
+      <br><br>
+      Welcome to FuegoDev — where serious meets fun, and the future is built with intention.
+    </p>
+   </section>
+
+  <!-- Skills Section -->
+   <section id="skills" class="section skills">
+    <h2>SKILLS</h2>
+    <div id="skillsTables">
+      <table class="leftside">
+        <thead>
+          <tr>
+            <th class="leftside">Frontend</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="leftside">
+              <img src="https://i.supaimg.com/59b12ca2-21e5-45e8-9343-65592f156bab.jpg" class="tdLogos" alt="HTML Logo" loading="lazy"> HTML
+            </td>
+          </tr>
+          <tr>
+            <td class="leftside">
+              <img src="https://i.supaimg.com/ac5aed89-cb9c-48cb-a868-b2406557deb5.png" class="tdLogos" alt="CSS Logo" loading="lazy"> CSS
+            </td>
+          </tr>
+          <tr>
+            <td class="leftside">
+              <img src="https://i.supaimg.com/010cba54-a783-4a1a-a0f0-2cfeb56cb689.png" class="tdLogos" alt="JavaScript Logo" loading="lazy"> JavaScript
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="rightside">
+        <thead>
+          <tr>
+            <th class="rightside">Backend</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="rightside">
+              <img src="https://i.supaimg.com/fe6f5094-3231-4596-95aa-a75a87241d96.jpg" class="tdLogos" alt="Python Logo" loading="lazy"> Python
+            </td>
+          </tr>
+          <tr>
+            <td class="rightside">
+              <img src="https://i.supaimg.com/6229d87c-048e-4539-b2ff-8a1ee4615bae.png" class="tdLogos" alt="API REST Logo" loading="lazy"> API REST
+            </td>
+          </tr>
+          <tr>
+            <td class="rightside">
+              <img src="https://i.supaimg.com/b022791b-eee6-46d8-b5d9-a1cb14d87bad.png" class="tdLogos" alt="Termux Logo" loading="lazy"> Termux
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+   </section>
+
+  <!-- Projects Section -->
+   <section id="projects" class="section projects">
+    <h2>PROJECTS</h2>
+    <div class="grid-projects">
+      <article class="card">
+        <h3>🛡️ SMART ENIGMA 🛡️</h3>
+        <details>
+          <summary><em>Customizable encryption Tool</em></summary>
+          <p>Designed to protect your sensitive data with a variable key system and a simple, secure, and flexible interface.</p>
+        </details>
+        <a href="Smart-Enigma-Presentation.html" class="btn" aria-label="Learn more about Smart Enigma project">Learn More</a>
+      </article>
+      <article class="card">
+        <h3>FuegoDev's Portfolio</h3>
+        <p>This modern, responsive portfolio website showcasing my development skills and projects.</p>
+        <a href="#contact" class="btn" aria-label="Contact about portfolio project">View Details</a>
+      </article>
+    </div>
+   </section>
+
+  <!-- Contact Section -->
+   <section id="contact" class="section contact">
+    <h2>CONTACT</h2>
+    <form id="contact-form" novalidate>
+      <input type="text" id="name" name="from_name" placeholder="Your Name" required aria-label="Your Name">
+      <input type="email" id="email" name="reply_to" placeholder="Your Email" required aria-label="Your Email">
+      <textarea name="message" id="message" placeholder="Send me a message..." required aria-label="Your Message"></textarea>
+      <button type="submit" id="sendBtn" class="btn">Send Message</button>
+      <span id="statusIcon" style="display:none;" aria-live="polite"></span>
+    </form>
+   </section>
+
+  <!-- Social Links -->
+   <section id="socialLinks" aria-label="Social Media Links">
+    <a href="https://www.linkedin.com/in/aristide-dossou-336188367" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+      <img class="socialLogos" src="https://i.supaimg.com/889736a0-9375-4de0-b333-a8c41cabd3a5.jpg" alt="LinkedIn">
+    </a>
+    <a href="https://x.com/DevFuego?t=fRN8Xgmq3kfwkKbi7dNc_g&s=09" target="_blank"
+    rel="noopener noreferrer" aria-label="Twitter Profile">
+      <img class="socialLogos"
+      src="https://i.supaimg.com/3859bc68-b290-47a2-83f0-e1546bc44ff6.png" alt="Twitter
+      Logo">
+    </a>
+    <a href="https://www.facebook.com/ahry.dss" target="_blank" rel="noopener noreferrer" aria-label="Twitter Profile">
+      <img class="socialLogos" src="https://i.supaimg.com/50bf9093-5f46-402d-8396-44bedd02b630.jpg" alt="Twitter">
+    </a>
+    <a href="https://github.com/FuegoDev369" target="_blank" rel="noopener noreferrer" aria-label="Twitter Profile">
+      <img class="socialLogos"
+      src="https://i.supaimg.com/1994990e-bdcd-4ee6-95a0-58fb0dead9f8.png" alt="Github">
+    </a>
+   </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 FuegoDev
+     <span>
+       <img src="https://i.supaimg.com/8dd9c9bd-0ef8-455c-8c63-fe9f2ca39429.png" 
+           alt="FuegoDev Logo" width="20" height="20" id="fuegoDevLogoOnFooter">
+     </span>
+    | All rights reserved</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Optimized interaction handling
+    const body = document.querySelector("body");
+    const tables = document.getElementById("skillsTables");
+    
+    function showBackground() {
+      if (tables) {
+        tables.classList.toggle("tablesOnScroll");
+      }
+    }
+    
+    // Use passive listeners for better performance
+    body.addEventListener("touchstart", showBackground, { passive: true });
+    body.addEventListener("touchend", showBackground, { passive: true });
+
+    // Smooth scroll enhancement
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Header scroll effect
+    let lastScrollTop = 0;
+    const header = document.querySelector('.header');
+    
+    window.addEventListener('scroll', function() {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      
+      if (scrollTop > lastScrollTop && scrollTop > 100) {
+        header.style.transform = 'translateY(-100%)';
+      } else {
+        header.style.transform = 'translateY(0)';
+      }
+      
+      lastScrollTop = scrollTop;
+    }, { passive: true });
+    
+     <!-- SCRIPT VALIDATION -->
+    document.addEventListener("DOMContentLoaded", function () {
+        const nameInput = document.getElementById("name");
+        const emailInput = document.getElementById("email");
+        const messageInput = document.getElementById("message");
+        const sendBtn = document.getElementById("sendBtn");
+        sendBtn.disabled = true;
+
+        function validateForm() {
+            const nameValid = nameInput.value.trim().length > 0;
+            const emailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailInput.value.trim());
+            const messageValid = messageInput.value.trim().length > 0;
+
+            if (nameValid && emailValid && messageValid) {
+                sendBtn.disabled = false;
+                sendBtn.classList.add("active");
+            } 
+            else {
+                sendBtn.disabled = true;
+                sendBtn.classList.remove("active");
+            }
+        }
+
+        nameInput.addEventListener("input", validateForm);
+        emailInput.addEventListener("input", validateForm);
+        messageInput.addEventListener("input", validateForm);
+    });
+  </script>
+
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function() {
+      emailjs.init("ZQE8YkiUEybPCPHSZ"); // Clé publique EmailJS
+    })();
+
+    const form = document.getElementById("contact-form");
+    const sendBtn = document.getElementById("sendBtn");
+    const statusIcon = document.getElementById("statusIcon");
+
+    form.addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      // Remplacer bouton par loader fluide
+      sendBtn.style.display = "none";
+      statusIcon.className = "circle-loader";
+      statusIcon.style.display = "inline-block";
+      setTimeout(() => statusIcon.classList.add("fade-in"), 10);
+
+      emailjs.sendForm("service_uics384", "template_21gxsgb", this)
+        .then(() => {
+          // Loader -> Coche verte fluide
+          statusIcon.classList.remove("fade-in");
+          setTimeout(() => {
+            statusIcon.className = "checkmark";
+            setTimeout(() => statusIcon.classList.add("fade-in"), 10);
+          }, 300);
+
+          // Revenir au bouton après 3s
+          setTimeout(() => {
+            statusIcon.classList.remove("fade-in");
+            setTimeout(() => {
+              statusIcon.style.display = "none";
+              sendBtn.style.display = "inline-block";
+              sendBtn.classList.remove("active");
+              sendBtn.disabled = true;
+            }, 300);
+          }, 2000);
+
+          form.reset();
+        })
+        .catch((error) => {
+          alert("Erreur : " + error.text);
+          statusIcon.style.display = "none";
+          sendBtn.style.display = "inline-block";
+        });
+    });
+  </script>
+
+</body>
+</html>
