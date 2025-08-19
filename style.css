@@ -21,14 +21,45 @@
     html {
       scroll-behavior: smooth;
     }
-
-    body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-      background: var(--bg-dark);
-      color: var(--text-light);
+    
+body {
+  /*margin: 0;*/
+  /*height: 100vh;*/
+  /*display: flex;*/
+  /*justify-content: center;*/
+  /*align-items: center;*/
+  font-family: font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--text-light);
       line-height: 1.6;
       overflow-x: hidden;
-    }
+  /*color: #fff;*/
+
+  /* Dégradé initial */
+  background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #a1c4fd, #c2e9fb);
+  background-size: 400% 400%;
+  animation: gradientAnimation 17s ease infinite;
+}
+
+/* Animation en boucle douce */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+    
+   /** body {
+       font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+       background: var(--bg-dark);
+       color: var(--text-light);
+       line-height: 1.6;
+       overflow-x: hidden;
+     } */
 
     /* Header Styles */
     .header {
@@ -100,9 +131,9 @@
 
     /* Section Styles */
     .section {
-      min-height: 100vh;
+      min-height: 60vh;
       padding: 6rem 2rem 2rem;
-      max-width: 1200px;
+      max-width: 1000px;
       margin: 0 auto;
       display: flex;
       flex-direction: column;
@@ -529,9 +560,12 @@
     width: 100%;
     margin: 10px 0;
     padding: 12px;
-    font-size: 16px;
+    color: #000;
+    font-size: 17px;
     border: 1px solid #ccc;
     border-radius: 8px;
+    font-family: Courier New;
+    font-weight: 800;
     transition: border 0.3s;
 }
 
@@ -570,4 +604,15 @@
     0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(0,170,255, 0.6); }
     50% { transform: scale(1.05); box-shadow: 0 0 10px 5px rgba(0,170,255, 0.4); }
     100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(0,170,255, 0.6); }
+}
+
+.projectsUIImage {
+  width: 100px;
+  height: 200px;
+}
+
+#smart-enigma-article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
