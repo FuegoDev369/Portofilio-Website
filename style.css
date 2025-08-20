@@ -611,8 +611,10 @@ body {
   height: 200px;
 }
 
-#smart-enigma-article {
+#smart-enigma-article, #calcryptor-article {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+  
