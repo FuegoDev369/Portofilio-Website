@@ -107,57 +107,58 @@
 
   <!-- Projects Section -->
    <section id="projects" class="section projects">
-    <h2>PROJECTS</h2>
-    <div class="grid-projects">
-      <!-- SMART-ENIGMA -->
-      <article id="smart-enigma-article" class="card">
-        <h3>🛡️ SMART ENIGMA 🛡️</h3>
-        <details>
-          <summary><em>Customizable encryption Tool</em></summary>
-          <p>Designed to protect your sensitive data with a variable key system and a simple, secure, and flexible interface.</p>
-        </details>
-        <img src="https://i.supaimg.com/a53f231e-c990-4c2d-a0bc-8eaf893f8f5e.png" class="projectsUIImage" 
-        alt="SMART-ENIGMA UI">
-        <a href="Smart-Enigma-Presentation.html" class="btn" aria-label="Learn more about Smart Enigma project">Learn More
-        </a>
-      </article>
-      
-      <!-- CALCRYPTOR -->
-      <article id="calcryptor-article" class="card">
-        <h3>️CALCRYPTOR 🧮₿</h3>
-        <details>
-         <summary><em>💱 CalCryptor – A Smart & Intuitive Crypto Calculator</em></summary>
-         <p>
-    CalCryptor is a modern web-based calculator I designed and developed from scratch.  
-    It allows users to <strong>instantly switch</strong> between traditional numeric input 
-    and <strong>live crypto price conversions</strong> for popular digital assets.  
-       </p>
-       <p>
-    ✦ <strong>Key Features:</strong><br>
-    • Dual-mode system: Crypto ↔ Number pad<br>
-    • Real-time data fetching with smooth UI updates<br>
-    • Clean, responsive interface with intuitive controls
+     <h2>PROJECTS</h2>
+       <!-- SMART-ENIGMA -->
+    <article id="smart-enigma-article" class="card">
+     <h3>🛡️ SMART ENIGMA 🛡️</h3>
+     <div class="accordion">
+      <button class="accordion-summary"><em>Customizable encryption Tool</em></button>
+     <div class="accordion-content">
+      <p>
+        Designed to protect your sensitive data with a variable key system and a simple, secure, and flexible interface.
+      </p>
+    </div>
+    </div>
+     <img src="https://i.supaimg.com/a53f231e-c990-4c2d-a0bc-8eaf893f8f5e.png" 
+       class="projectsUIImage" alt="SMART-ENIGMA UI">
+     <a href="Smart-Enigma-Presentation.html" class="btn" aria-label="Learn more about Smart Enigma project">Learn More</a>
+    </article>
+
+           <!-- CALCRYPTOR -->
+    <article id="calcryptor-article" class="card">
+     <h3>️CALCRYPTOR 🧮₿</h3>
+     <div class="accordion">
+     <button class="accordion-summary"><em>💱 CalCryptor – A Smart & Intuitive Crypto Calculator</em></button>
+    <div class="accordion-content">
+      <p>
+        CalCryptor is a modern web-based calculator I designed and developed from scratch.  
+        It allows users to <strong>instantly switch</strong> between traditional numeric input 
+        and <strong>live crypto price conversions</strong> for popular digital assets.  
       </p>
       <p>
-    🚀 <em>My contribution:</em> I engineered the full frontend logic, optimized user interactions, 
-    and implemented a seamless mode toggle to deliver both precision and flexibility.  
+        ✦ <strong>Key Features:</strong><br>
+        • Dual-mode system: Crypto ↔ Number pad<br>
+        • Real-time data fetching with smooth UI updates<br>
+        • Clean, responsive interface with intuitive controls
       </p>
-     </details>
-     <img src="https://i.supaimg.com/d0b4079b-e10b-4cce-8da2-54d4e0d7753d.png"
-     alt="calcryptor UI image" class="projectsUIImage">
-     <a href="https://fuegodev369.github.io/calcryptor/" class="btn" aria-label="Lauch
-     CalCryptor Now">Launch CalCryptor  🧮</a> 
-     </article>
-  
-        
+      <p>
+        🚀 <em>My contribution:</em> I engineered the full frontend logic, optimized user interactions, 
+        and implemented a seamless mode toggle to deliver both precision and flexibility.  
+      </p>
+    </div>
+  </div>
+   <img src="https://i.supaimg.com/d0b4079b-e10b-4cce-8da2-54d4e0d7753d.png"
+       alt="calcryptor UI image" class="projectsUIImage">
+  <a href="https://fuegodev369.github.io/calcryptor/" class="btn" aria-label="Launch CalCryptor Now">Launch CalCryptor 🧮</a>
+  </article>
         <!-- PORTOFILION WEBSITE -->
-    <article class="card">
+  <article class="card">
         <h3>FuegoDev's Portfolio</h3>
         <p>This modern, responsive portfolio website showcasing my development skills and projects.</p>
         <a href="#contact" class="btn" aria-label="Contact about portfolio project">View Details</a>
       </article>
-    </div>
-   </section>
+    
+  </section>
 
   <!-- Contact Section -->
    <section id="contact" class="section contact">
@@ -324,6 +325,22 @@
           sendBtn.style.display = "inline-block";
         });
     });
+    
+    /*accordion script */
+    
+    document.querySelectorAll('.accordion-summary').forEach(button => {
+  button.addEventListener('click', () => {
+    const content = button.nextElementSibling;
+
+    if (content.classList.contains('open')) {
+      content.style.maxHeight = null;
+      content.classList.remove('open');
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+      content.classList.add('open');
+    }
+  });
+});
   </script>
  </body>
 </html>
